@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Collact.iml" filepath="$PROJECT_DIR$/Collact.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/awesomestuff/awesomedialogs.iml" filepath="$PROJECT_DIR$/awesomestuff/awesomedialogs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/awesomestuff/awesomestuff.iml" filepath="$PROJECT_DIR$/awesomestuff/awesomestuff.iml" />
     </modules>
   </component>
 </project>
