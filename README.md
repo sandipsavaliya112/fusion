@@ -1,12 +1,8 @@
+![Fusion](https://github.com/blackbeared/fusion/blob/master/logo.png)
+
 ## Fusion By BlackBeared  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  [![Github All Releases](https://img.shields.io/github/downloads/blackbeared/fusion/total.svg)](https://github.com/blackbeared/fusion/)
 
-_An Easy-to-use **Kotlin** based Customizable Library with Material Layouts._
-
-
-
-by BlackBeared
-
-[@blackbeared Best of the Day](http://www.linkedin.com/er-sandip-savaliya)
+_An Easy-to-use **Kotlin** based Customizable Library with Material Layouts_ by [@blackbeared](http://www.linkedin.com/er-sandip-savaliya).
 
 ## Features
 * Custom Floating Action Buttons with Floating Action Menu
