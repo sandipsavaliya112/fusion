@@ -10,10 +10,28 @@
     tools:showIn="@layout/activity_dashboard">
 
     <Button
-        android:id="@+id/openDiag"
+        android:id="@+id/sharedDialog"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@drawable/ic_check_white_48dp"
-        android:text="OPEN DIALOG"/>
+        android:text="Shared DIALOG" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#77777777" />
+
+    <Button
+        android:id="@+id/colorPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_check_white_48dp"
+        android:text="ColorPicker DIALOG" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#77777777" />
+
 
 </LinearLayout>

@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/awesomestuff" />
+            <option value="$PROJECT_DIR$/fusion" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
