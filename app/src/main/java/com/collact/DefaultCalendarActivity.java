@@ -192,11 +192,6 @@ public class DefaultCalendarActivity extends AppCompatActivity implements RadioG
                 menuThreeMonth.setVisible(false);
                 break;
 
-            case R.id.rb_none:
-                calendarView.setSelectionType(SelectionType.NONE);
-                menuFridays.setVisible(false);
-                menuThreeMonth.setVisible(false);
-                break;
         }
     }
 }

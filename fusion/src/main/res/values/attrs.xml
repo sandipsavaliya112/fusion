@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AwesomeDiagonal">
+        <attr name="diagonal_angle" format="integer" />
+        <attr name="diagonal_handleMargins" format="boolean"/>
+        <attr name="diagonal_position" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+            <enum name="bottom" value="4" />
+            <enum name="top" value="8"/>
+        </attr>
+        <attr name="diagonal_direction" format="enum">
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="expandableLayout">
+        <attr name="ael_duration" format="integer" />
+        <attr name="ael_expanded" format="boolean" />
+        <attr name="ael_defaultChildIndex" format="integer" />
+        <attr name="ael_defaultPosition" format="dimension" />
+        <attr name="ael_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ael_interpolator" format="enum">
+            <enum name="accelerateDecelerate" value="0" />
+            <enum name="accelerate" value="1" />
+            <enum name="anticipate" value="2" />
+            <enum name="anticipateOvershoot" value="3" />
+            <enum name="bounce" value="4" />
+            <enum name="decelerate" value="5" />
+            <enum name="fastOutLinearIn" value="6" />
+            <enum name="fastOutSlowIn" value="7" />
+            <enum name="linear" value="8" />
+            <enum name="linearOutSlowIn" value="9" />
+            <enum name="overshoot" value="10" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeFab">
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_showShadow" format="boolean" />
+        <attr name="fab_shadowColor" format="color" />
+        <attr name="fab_shadowRadius" format="dimension" />
+        <attr name="fab_shadowXOffset" format="dimension" />
+        <attr name="fab_shadowYOffset" format="dimension" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_showAnimation" format="reference" />
+        <attr name="fab_hideAnimation" format="reference" />
+        <attr name="fab_label" format="string" />
+        <attr name="fab_elevationCompat" format="dimension" />
+        <attr name="fab_progress_color" format="color" />
+        <attr name="fab_progress_backgroundColor" format="color" />
+        <attr name="fab_progress_indeterminate" format="boolean" />
+        <attr name="fab_progress_max" format="integer" />
+        <attr name="fab_progress" format="integer" />
+        <attr name="fab_progress_showBackground" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeFabMenu">
+        <attr name="menu_showShadow" format="boolean" />
+        <attr name="menu_buttonSpacing" format="dimension" />
+        <attr name="menu_labels_margin" format="dimension" />
+        <attr name="menu_labels_showAnimation" format="reference" />
+        <attr name="menu_labels_hideAnimation" format="reference" />
+        <attr name="menu_labels_paddingTop" format="dimension" />
+        <attr name="menu_labels_paddingLeft" format="dimension" />
+        <attr name="menu_labels_paddingRight" format="dimension" />
+        <attr name="menu_labels_paddingBottom" format="dimension" />
+        <attr name="menu_labels_padding" format="dimension" />
+        <attr name="menu_labels_textColor" format="reference|color" />
+        <attr name="menu_labels_textSize" format="dimension" />
+        <attr name="menu_labels_cornerRadius" format="dimension" />
+        <attr name="menu_labels_showShadow" format="boolean" />
+        <attr name="menu_labels_colorNormal" format="color" />
+        <attr name="menu_labels_colorPressed" format="color" />
+        <attr name="menu_labels_colorRipple" format="color" />
+        <attr name="menu_labels_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="menu_icon" format="reference" />
+        <attr name="menu_animationDelayPerItem" format="integer" />
+        <attr name="menu_buttonToggleAnimation" format="reference" />
+        <attr name="menu_labels_singleLine" format="boolean" />
+        <attr name="menu_labels_ellipsize" format="enum">
+            <enum name="none" value="0" />
+            <enum name="start" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="end" value="3" />
+            <enum name="marquee" value="4" />
+        </attr>
+        <attr name="menu_labels_maxLines" format="integer" />
+        <attr name="menu_fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="menu_labels_style" format="reference" />
+        <attr name="menu_labels_customFont" format="string" />
+        <attr name="menu_shadowColor" format="color" />
+        <attr name="menu_shadowRadius" format="dimension" />
+        <attr name="menu_shadowXOffset" format="dimension" />
+        <attr name="menu_shadowYOffset" format="dimension" />
+        <attr name="menu_colorNormal" format="color" />
+        <attr name="menu_colorPressed" format="color" />
+        <attr name="menu_colorRipple" format="color" />
+        <attr name="menu_openDirection" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+        <attr name="menu_backgroundColor" format="color" />
+        <attr name="menu_fab_label" format="string" />
+        <attr name="menu_fab_show_animation" format="reference" />
+        <attr name="menu_fab_hide_animation" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AwesomeColorLine">
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="colors" format="reference" />
+        <attr name="selectedColorIndex" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CalendarView">
+
+        <attr name="firstDayOfTheWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+
+        <attr name="selectionType" format="enum">
+            <enum name="single" value="0" />
+            <enum name="multiple" value="1" />
+            <enum name="range" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+
+        <attr name="orientationCal" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="calendarBackgroundColor" format="color" />
+        <attr name="monthTextColor" format="color" />
+        <attr name="otherDayTextColor" format="color" />
+        <attr name="dayTextColor" format="color" />
+        <attr name="weekDayTitleTextColor" format="color" />
+        <attr name="disabledDayTextColor" format="color" />
+        <attr name="selectionBarMonthTextColor" format="color" />
+
+        <attr name="selectedDayTextColor" format="color" />
+        <attr name="selectedDayBackgroundColor" format="color" />
+        <attr name="selectedDayBackgroundStartColor" format="color" />
+        <attr name="selectedDayBackgroundEndColor" format="color" />
+
+        <attr name="currentDayTextColor" format="color" />
+        <attr name="currentDayIconRes" format="reference" />
+        <attr name="currentDaySelectedIconRes" format="reference" />
+
+        <attr name="connectedDayIconRes" format="reference" />
+        <attr name="connectedDaySelectedIconRes" format="reference" />
+        <attr name="connectedDayIconPosition" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+
+        <attr name="previousMonthIconRes" format="reference" />
+        <attr name="nextMonthIconRes" format="reference" />
+
+        <attr name="weekendDayTextColor" format="color" />
+        <attr name="weekendDays">
+            <flag name="none" value="0" />
+            <flag name="monday" value="1" />
+            <flag name="tuesday" value="2" />
+            <flag name="wednesday" value="4" />
+            <flag name="thursday" value="8" />
+            <flag name="friday" value="16" />
+            <flag name="saturday" value="32" />
+            <flag name="sunday" value="64" />
+        </attr>
+
+    </declare-styleable>
+</resources>

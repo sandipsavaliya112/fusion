@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <include layout="@layout/view_color_area"/>
@@ -16,42 +17,44 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.applikeysolutions.cosmocalendar.view.CalendarView
+            <include layout="@layout/view_title_and_message"/>
+
+            <com.awesome.dialog.datepicker.view.CalendarView
                 android:id="@+id/calendar_view"
                 android:layout_width="match_parent"
+                app:orientationCal="horizontal"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:background="#77777777"/>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/ll_settings"
-                android:layout_below="@id/toolbar"/>
+                android:gravity="right"
+                android:orientation="horizontal">
 
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
 
+                <Button
+                    android:id="@+id/ld_btn_no"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/ld_btn_yes"
+                    style="?android:borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="right"
-        android:orientation="horizontal">
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/ld_btn_no"
-            style="?android:borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
-
-        <Button
-            android:id="@+id/ld_btn_yes"
-            style="?android:borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone" />
-
-    </LinearLayout>
 </LinearLayout>

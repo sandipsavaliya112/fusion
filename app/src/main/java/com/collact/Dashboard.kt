@@ -4,9 +4,12 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import android.widget.CalendarView
 import com.awesome.dialog.AwesomeColorPickerDialog
+import com.awesome.dialog.AwesomeDatePickerDialog
 import com.awesome.dialog.AwesomeSwitchableDialog
+import com.awesome.dialog.datepicker.utils.SelectionType
 import com.awesome.shorty.AwesomeToast
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import kotlinx.android.synthetic.main.content_dashboard.*
@@ -36,7 +39,17 @@ class Dashboard : AwesomeColorPickerDialog.OnColorConfirmListener, AppCompatActi
 
         colorPickerDialog.setOnClickListener {
 
-            startActivity(Intent(this, DefaultCalendarActivity::class.java))
+            AwesomeDatePickerDialog(this)
+                    .setIcon(R.drawable.ic_check_white_48dp)
+                    .setIconTintColor(Color.WHITE)
+                    .setCalendarSelectionType(SelectionType.RANGE)
+                    .setCalendarAccentColor(resources.getColor(R.color.color_deep_purple))
+                    .setPositiveButton("Done", View.OnClickListener {
+                        AwesomeToast.success(this, "picked").show()
+                    })
+                    .show()
+
+          //  startActivity(Intent(this, DefaultCalendarActivity::class.java))
            /* AwesomeColorPickerDialog(this)
                     .setConfirmButton("Done", this)
                     .show()*/
