@@ -1,6 +1,6 @@
 ![Fusion](https://github.com/blackbeared/fusion/blob/master/logo.png)
 
-## Fusion By BlackBeared  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  [![Github All Releases](https://img.shields.io/github/downloads/blackbeared/fusion/total.svg)](https://github.com/blackbeared/fusion/)  [![](https://jitpack.io/v/blackbeared/fusion.svg)](https://jitpack.io/#blackbeared/fusion)
+## Fusion By BlackBeared  [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) (https://github.com/blackbeared/fusion/)  [![](https://jitpack.io/v/blackbeared/fusion.svg)](https://jitpack.io/#blackbeared/fusion)
 
 _An Easy-to-use **Kotlin** based Customizable Library with Material Layouts_ by [@blackbeared](http://www.linkedin.com/er-sandip-savaliya).
 
@@ -20,7 +20,7 @@ Add this in your project level **build.gradle** file _(not your module build.gra
 ```gradle
     allprojects {
 	     repositories {
-		    ...
+		    ..
 		    maven { 
                     url "https://jitpack.io" 
                 }
@@ -32,7 +32,7 @@ Then, add the library to your module **build.gradle**
 
 ```gradle
     dependencies {
-         ...
+         ..
          implementation 'com.github.blackbeared:fusion:1.0.2'
     }
 ```
@@ -43,8 +43,6 @@ Till now i haven't designed any sample layouts, but i will upload photos with us
 **Already in use in following apps**
 
 - Medika
-- CryptoMarket
-- VirtualCoins
 
 *(feel free to send me new projects)*
 
@@ -75,12 +73,12 @@ Version | Description
 ## License
     Copyright (c) 2017 Sandip Savaliya
 
-          This program is free software: you can redistribute it and/or modify it under the terms of the GNU General 
-    Public License as published by Free Software Foundation, either version 3 of the License, or (at your option)
-    any later version. 
-       This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
-    implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+          This program is free software: you can redistribute it and/or modify it under the terms of the GNU 
+	  General Public License as published by Free Software Foundation, either version 3 of the License, 
+	  or (at your option) any later version. 
+          This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+	  even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
     
-    See the GNU General Public License for more details. You should have received a copy of the GNU General Public 
-    License along with this program. If not, see http://www.gnu.org/licenses/.
+          See the GNU General Public License for more details. You should have received a copy of the GNU 
+	  General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
