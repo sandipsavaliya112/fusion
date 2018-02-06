@@ -36,5 +36,8 @@ Here is a kotlin code to use Shared Dialog.
                     .show()
 
 ```
+
+## Description
+
 Define two different layout xml files, and set them as top and bottom view and configure views inside **.configureTopView** and **.configureBottomview** 
 and then Add this code to use shared dialog in your app to use shared Dialog.
