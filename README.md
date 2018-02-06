@@ -42,7 +42,16 @@ Then, add the library to your module **build.gradle**
 ```
 
 ## Sample Usage
-Till now i haven't designed any sample layouts, but i will upload photos with usage as soon as possible.
+Here are different different samples to implement different modules.
+
+* [Fully Custom Dialog Implementation](CUSTOM.md)
+* [Shared | Switchable Dialog Implementation](SHARED_DIALOG.md)
+* [Multiple Item Selector Implementation](CHOICE.md)
+* [ColorPicker Implementation](COLORPICKER.md)
+* [Custom Alert Dialog Implementation](ALERT_DIALOG.md)
+* [Floating Actions Menu Implementation](FAB_MENU.md)
+* [Custom Toasts Implementation](TOAST.md)
+
 
 **Already in use in following apps**
 
