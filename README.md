@@ -46,6 +46,7 @@ Here are different different samples to implement different modules.
 
 * [Fully Custom Dialog Implementation](CUSTOM.md)
 * [Shared | Switchable Dialog Implementation](SHARED_DIALOG.md)
+* [Fully Customizabe DatePicker Implementation](DATE_PICKER.md)
 * [Multiple Item Selector Implementation](CHOICE.md)
 * [ColorPicker Implementation](COLORPICKER.md)
 * [Custom Alert Dialog Implementation](ALERT_DIALOG.md)
