@@ -4,6 +4,8 @@
 
 _An Easy-to-use **Kotlin** based Customizable Library with Material Layouts_ by [@blackbeared](http://www.linkedin.com/er-sandip-savaliya).
 
+![Fusion](https://github.com/blackbeared/fusion/blob/master/intro.gif)
+
 ## Features
 * Custom Floating Action Buttons with Floating Action Menu
 * Custom Fancy Dialog inspired by LovelyDialog and SweetAlerts.
@@ -12,6 +14,8 @@ _An Easy-to-use **Kotlin** based Customizable Library with Material Layouts_ by 
 * Expandable Linear & Relative Layouts.
 * Custom Toast inspired by Toasty.
 * Custom Coordinator behavior Layout with Parallax ViewPager.
+* Line Color Picker.
+* ParallaxImageView.
 
 
 ## Gradle Dependency
