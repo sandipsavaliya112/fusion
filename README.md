@@ -37,7 +37,7 @@ Then, add the library to your module **build.gradle**
 ```gradle
     dependencies {
          ..
-         implementation 'com.github.blackbeared:fusion:1.0.2'
+         implementation 'com.github.blackbeared:fusion:1.0.3'
     }
 ```
 
