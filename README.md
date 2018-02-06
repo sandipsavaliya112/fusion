@@ -54,6 +54,8 @@ You can contribute by opening a pull request to dev branch. Please try to push o
 ## Changelog
 Version | Description
 -----------|------------------
+**v1.0.3** |  
+06 February, 2018 |  1. Added **All Demonstrations of All Dialogs**. <br/>2. Added ParallaxImageView module.
 **v1.0.2** |  
 23 November, 2017 |  1. Added **AwesomeSwitchableDialog** with supporting two custom views. <br/>2. Added functionality of Diagonal Views.
 **v1.0.1** |  
