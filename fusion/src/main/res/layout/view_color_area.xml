@@ -3,10 +3,10 @@
     android:id="@id/ld_color_area"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingBottom="24dp"
-    android:paddingTop="24dp"
-    android:gravity="center">
+    android:paddingTop="24dp">
 
     <ImageView
         android:id="@id/ld_icon"

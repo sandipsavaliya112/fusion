@@ -21,12 +21,12 @@ class AwesomeGeneralDialog : AwesomeBase<AwesomeGeneralDialog> {
     private var negativeButton: Button? = null
     private var neutralButton: Button? = null
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_standard
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         positiveButton = findView(R.id.ld_btn_yes)

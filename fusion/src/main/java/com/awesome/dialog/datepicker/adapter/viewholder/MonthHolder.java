@@ -24,9 +24,9 @@ public class MonthHolder extends RecyclerView.ViewHolder {
 
     public MonthHolder(View itemView, SettingsManager appearanceModel) {
         super(itemView);
-        llMonthHeader = (LinearLayout) itemView.findViewById(R.id.ll_month_header);
-        monthView = (MonthView) itemView.findViewById(R.id.month_view);
-        tvMonthName = (TextView) itemView.findViewById(R.id.tv_month_name);
+        llMonthHeader = itemView.findViewById(R.id.ll_month_header);
+        monthView = itemView.findViewById(R.id.month_view);
+        tvMonthName = itemView.findViewById(R.id.tv_month_name);
         viewLeftLine = itemView.findViewById(R.id.view_left_line);
         viewRightLine = itemView.findViewById(R.id.view_right_line);
         this.appearanceModel = appearanceModel;

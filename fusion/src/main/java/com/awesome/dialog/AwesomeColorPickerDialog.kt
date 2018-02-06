@@ -29,9 +29,9 @@ class AwesomeColorPickerDialog : AwesomeBase<AwesomeColorPickerDialog> {
     override val layout: Int
         get() = R.layout.dialog_colorpicker
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         findView<View>(R.id.ld_color_area).minimumHeight = 350

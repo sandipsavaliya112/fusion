@@ -22,12 +22,12 @@ class AwesomeInfoDialog : AwesomeBase<AwesomeInfoDialog> {
 
     private var infoDialogId: Int = 0
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_info
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         cbDontShowAgain = findView(R.id.ld_cb_dont_show_again)

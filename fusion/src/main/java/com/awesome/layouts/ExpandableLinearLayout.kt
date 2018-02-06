@@ -345,7 +345,7 @@ class ExpandableLinearLayout : LinearLayout, ExpandableLayout {
             return
         }
         createExpandAnimator(currentPosition, position, duration,
-                interpolator ?: this.interpolator).start()
+                interpolator).start()
     }
 
     /**

@@ -22,15 +22,15 @@ class AwesomeChoiceDialog : AwesomeBase<AwesomeChoiceDialog> {
     private var choicesList: ListView? = null
     private var confirmButton: TextView? = null
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_choice
 
     private val isMultiChoiceList: Boolean
         get() = choicesList!!.choiceMode == AbsListView.CHOICE_MODE_MULTIPLE
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         choicesList = findView(R.id.ld_choices)
@@ -116,7 +116,7 @@ class AwesomeChoiceDialog : AwesomeBase<AwesomeChoiceDialog> {
         return this
     }
 
-    internal override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         if (isMultiChoiceList) {
             val adapter = choicesList!!.adapter
@@ -131,7 +131,7 @@ class AwesomeChoiceDialog : AwesomeBase<AwesomeChoiceDialog> {
         }
     }
 
-    internal override fun restoreState(savedState: Bundle) {
+    override fun restoreState(savedState: Bundle) {
         super.restoreState(savedState)
         if (isMultiChoiceList) {
             val checkedStates = savedState.getBooleanArray(KEY_ITEM_CHECKED_STATES) ?: return

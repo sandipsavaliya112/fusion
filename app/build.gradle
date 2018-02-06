@@ -29,10 +29,6 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
-/*
-    implementation 'com.github.applikeysolutions:cosmocalendar:1.0.4'*/
 
     implementation project(':fusion')
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }

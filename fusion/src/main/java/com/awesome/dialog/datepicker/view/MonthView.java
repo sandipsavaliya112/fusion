@@ -56,12 +56,12 @@ public class MonthView extends FrameLayout {
         addView(rvDays);
     }
 
-    public void setAdapter(DaysAdapter adapter) {
-        rvDays.setAdapter(adapter);
-    }
-
     public DaysAdapter getAdapter() {
         return (DaysAdapter) rvDays.getAdapter();
+    }
+
+    public void setAdapter(DaysAdapter adapter) {
+        rvDays.setAdapter(adapter);
     }
 
     public void initAdapter(Month month) {

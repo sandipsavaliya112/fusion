@@ -42,7 +42,7 @@
             android:id="@+id/vSwitcherDiagonal"
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            app:diagonal_angle="15"
+            app:diagonal_angle="18"
             app:diagonal_direction="left"
             app:diagonal_position="bottom">
 
@@ -66,7 +66,7 @@
 
                 <ImageView
                     android:id="@+id/topButton"
-                    android:layout_width="90dp"
+                    android:layout_width="60dp"
                     android:layout_height="90dp"
                     android:layout_gravity="left"
                     android:layout_marginLeft="15dp"
@@ -85,7 +85,7 @@
 
                 <ImageView
                     android:id="@+id/bottomButton"
-                    android:layout_width="90dp"
+                    android:layout_width="60dp"
                     android:layout_height="90dp"
                     android:layout_gravity="right|bottom"
                     android:layout_marginEnd="15dp"

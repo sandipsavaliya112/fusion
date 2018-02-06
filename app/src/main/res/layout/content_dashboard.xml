@@ -5,33 +5,438 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.collact.Dashboard"
     tools:showIn="@layout/activity_dashboard">
 
-    <Button
-        android:id="@+id/sharedDialog"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_check_white_48dp"
-        android:text="Shared DIALOG" />
+        android:layout_height="wrap_content">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:background="#77777777" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/colorPickerDialog"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_check_white_48dp"
-        android:text="ColorPicker DIALOG" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.3dp"
-        android:background="#77777777" />
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog1"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a1" />
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Shared Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog with two shared views."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog2"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a2" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Alert Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog with custom alerts."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog3"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a3" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Chooser Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog for multiselect options."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog4"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a4" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Progress Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog to display custom progress view."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog5"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a5" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Color picker dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog with fully customised color palette."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog6"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a6" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Date Picker Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Date picker with date range selection facility."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog7"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a7" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Custom Dialog"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog7"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Dialog with custom views."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog8"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a8" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Floating Action Button"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog8"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="animated FAB with FAB Menus."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog9"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a9" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Layouts"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog9"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Custom Diagonal and Expandable Layouts."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog9"
+                    android:padding="10dp"
+                    android:text="Shared dialog is made using Expandable and Diagonal layouts."
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="11dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.awesome.layouts.AwesomeImageView
+                    android:id="@+id/dialog10"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/a10" />
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#66000000" />
+
+                <TextView
+                    android:id="@+id/tv_dialog10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:text="Toast"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_dialog10"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-6dp"
+                    android:text="Awesome customizable toasts."
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

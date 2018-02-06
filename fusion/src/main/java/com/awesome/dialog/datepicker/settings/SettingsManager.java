@@ -60,118 +60,13 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
-    public int getMonthTextColor() {
-        return appearanceModel.getMonthTextColor();
-    }
-
-    @Override
-    public int getOtherDayTextColor() {
-        return appearanceModel.getOtherDayTextColor();
-    }
-
-    @Override
-    public int getDayTextColor() {
-        return appearanceModel.getDayTextColor();
-    }
-
-    @Override
-    public int getWeekendDayTextColor() {
-        return appearanceModel.getWeekendDayTextColor();
-    }
-
-    @Override
-    public int getWeekDayTitleTextColor() {
-        return appearanceModel.getWeekDayTitleTextColor();
-    }
-
-    @Override
-    public int getSelectedDayTextColor() {
-        return appearanceModel.getSelectedDayTextColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundColor() {
-        return appearanceModel.getSelectedDayBackgroundColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundStartColor() {
-        return appearanceModel.getSelectedDayBackgroundStartColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundEndColor() {
-        return appearanceModel.getSelectedDayBackgroundEndColor();
-    }
-
-    @Override
-    public int getCurrentDayTextColor() {
-        return appearanceModel.getCurrentDayTextColor();
-    }
-
-    @Override
-    public int getCurrentDayIconRes() {
-        return appearanceModel.getCurrentDayIconRes();
-    }
-
-    @Override
-    public int getCurrentDaySelectedIconRes() {
-        return appearanceModel.getCurrentDaySelectedIconRes();
-    }
-
-    @Override
-    public int getCalendarOrientation() {
-        return appearanceModel.getCalendarOrientation();
-    }
-
-    @Override
-    public int getConnectedDayIconRes() {
-        return appearanceModel.getConnectedDayIconRes();
-    }
-
-    @Override
-    public int getConnectedDaySelectedIconRes() {
-        return appearanceModel.getConnectedDaySelectedIconRes();
-    }
-
-    @Override
-    public int getConnectedDayIconPosition() {
-        return appearanceModel.getConnectedDayIconPosition();
-    }
-
-    @Override
-    public int getDisabledDayTextColor() {
-        return appearanceModel.getDisabledDayTextColor();
-    }
-
-    @Override
-    public int getSelectionBarMonthTextColor() {
-        return appearanceModel.getSelectionBarMonthTextColor();
-    }
-
-    @Override
-    public int getPreviousMonthIconRes() {
-        return appearanceModel.getPreviousMonthIconRes();
-    }
-
-    @Override
-    public int getNextMonthIconRes() {
-        return appearanceModel.getNextMonthIconRes();
-    }
-
-    @Override
-    public boolean isShowDaysOfWeek() {
-        return appearanceModel.isShowDaysOfWeek();
-    }
-
-    @Override
-    public boolean isShowDaysOfWeekTitle() {
-        return appearanceModel.isShowDaysOfWeekTitle();
-    }
-
-    @Override
     public void setCalendarBackgroundColor(int calendarBackgroundColor) {
         appearanceModel.setCalendarBackgroundColor(calendarBackgroundColor);
+    }
+
+    @Override
+    public int getMonthTextColor() {
+        return appearanceModel.getMonthTextColor();
     }
 
     @Override
@@ -180,8 +75,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getOtherDayTextColor() {
+        return appearanceModel.getOtherDayTextColor();
+    }
+
+    @Override
     public void setOtherDayTextColor(int otherDayTextColor) {
         appearanceModel.setOtherDayTextColor(otherDayTextColor);
+    }
+
+    @Override
+    public int getDayTextColor() {
+        return appearanceModel.getDayTextColor();
     }
 
     @Override
@@ -190,8 +95,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getWeekendDayTextColor() {
+        return appearanceModel.getWeekendDayTextColor();
+    }
+
+    @Override
     public void setWeekendDayTextColor(int weekendDayTextColor) {
         appearanceModel.setWeekendDayTextColor(weekendDayTextColor);
+    }
+
+    @Override
+    public int getWeekDayTitleTextColor() {
+        return appearanceModel.getWeekDayTitleTextColor();
     }
 
     @Override
@@ -200,8 +115,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getSelectedDayTextColor() {
+        return appearanceModel.getSelectedDayTextColor();
+    }
+
+    @Override
     public void setSelectedDayTextColor(int selectedDayTextColor) {
         appearanceModel.setSelectedDayTextColor(selectedDayTextColor);
+    }
+
+    @Override
+    public int getSelectedDayBackgroundColor() {
+        return appearanceModel.getSelectedDayBackgroundColor();
     }
 
     @Override
@@ -210,8 +135,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getSelectedDayBackgroundStartColor() {
+        return appearanceModel.getSelectedDayBackgroundStartColor();
+    }
+
+    @Override
     public void setSelectedDayBackgroundStartColor(int selectedDayBackgroundStartColor) {
         appearanceModel.setSelectedDayBackgroundStartColor(selectedDayBackgroundStartColor);
+    }
+
+    @Override
+    public int getSelectedDayBackgroundEndColor() {
+        return appearanceModel.getSelectedDayBackgroundEndColor();
     }
 
     @Override
@@ -220,8 +155,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getCurrentDayTextColor() {
+        return appearanceModel.getCurrentDayTextColor();
+    }
+
+    @Override
     public void setCurrentDayTextColor(int currentDayTextColor) {
         appearanceModel.setCurrentDayTextColor(currentDayTextColor);
+    }
+
+    @Override
+    public int getCurrentDayIconRes() {
+        return appearanceModel.getCurrentDayIconRes();
     }
 
     @Override
@@ -230,8 +175,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getCurrentDaySelectedIconRes() {
+        return appearanceModel.getCurrentDaySelectedIconRes();
+    }
+
+    @Override
     public void setCurrentDaySelectedIconRes(int currentDaySelectedIconRes) {
         appearanceModel.setCurrentDaySelectedIconRes(currentDaySelectedIconRes);
+    }
+
+    @Override
+    public int getCalendarOrientation() {
+        return appearanceModel.getCalendarOrientation();
     }
 
     @Override
@@ -240,8 +195,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getConnectedDayIconRes() {
+        return appearanceModel.getConnectedDayIconRes();
+    }
+
+    @Override
     public void setConnectedDayIconRes(int connectedDayIconRes) {
         appearanceModel.setConnectedDayIconRes(connectedDayIconRes);
+    }
+
+    @Override
+    public int getConnectedDaySelectedIconRes() {
+        return appearanceModel.getConnectedDaySelectedIconRes();
     }
 
     @Override
@@ -250,8 +215,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getConnectedDayIconPosition() {
+        return appearanceModel.getConnectedDayIconPosition();
+    }
+
+    @Override
     public void setConnectedDayIconPosition(int connectedDayIconPosition) {
         appearanceModel.setConnectedDayIconPosition(connectedDayIconPosition);
+    }
+
+    @Override
+    public int getDisabledDayTextColor() {
+        return appearanceModel.getDisabledDayTextColor();
     }
 
     @Override
@@ -260,8 +235,18 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getSelectionBarMonthTextColor() {
+        return appearanceModel.getSelectionBarMonthTextColor();
+    }
+
+    @Override
     public void setSelectionBarMonthTextColor(int selectionBarMonthTextColor) {
         appearanceModel.setSelectionBarMonthTextColor(selectionBarMonthTextColor);
+    }
+
+    @Override
+    public int getPreviousMonthIconRes() {
+        return appearanceModel.getPreviousMonthIconRes();
     }
 
     @Override
@@ -270,13 +255,28 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public int getNextMonthIconRes() {
+        return appearanceModel.getNextMonthIconRes();
+    }
+
+    @Override
     public void setNextMonthIconRes(int nextMonthIconRes) {
         appearanceModel.setNextMonthIconRes(nextMonthIconRes);
     }
 
     @Override
+    public boolean isShowDaysOfWeek() {
+        return appearanceModel.isShowDaysOfWeek();
+    }
+
+    @Override
     public void setShowDaysOfWeek(boolean showDaysOfWeek) {
         appearanceModel.setShowDaysOfWeek(showDaysOfWeek);
+    }
+
+    @Override
+    public boolean isShowDaysOfWeekTitle() {
+        return appearanceModel.isShowDaysOfWeekTitle();
     }
 
     @Override
@@ -290,6 +290,11 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
+    public void setDisabledDays(Set<Long> disabledDays) {
+        calendarListsModel.setDisabledDays(disabledDays);
+    }
+
+    @Override
     public ConnectedDaysManager getConnectedDaysManager() {
         return calendarListsModel.getConnectedDaysManager();
     }
@@ -300,18 +305,13 @@ public class SettingsManager implements AppearanceInterface, DateInterface, Cale
     }
 
     @Override
-    public DisabledDaysCriteria getDisabledDaysCriteria() {
-        return calendarListsModel.getDisabledDaysCriteria();
-    }
-
-    @Override
-    public void setDisabledDays(Set<Long> disabledDays) {
-        calendarListsModel.setDisabledDays(disabledDays);
-    }
-
-    @Override
     public void setWeekendDays(Set<Long> weekendDays) {
         calendarListsModel.setWeekendDays(weekendDays);
+    }
+
+    @Override
+    public DisabledDaysCriteria getDisabledDaysCriteria() {
+        return calendarListsModel.getDisabledDaysCriteria();
     }
 
     @Override

@@ -8,7 +8,7 @@ class ExpandableSavedState : View.BaseSavedState {
     var size: Int = 0
     var weight: Float = 0.toFloat()
 
-    internal constructor(superState: Parcelable) : super(superState) {}
+    internal constructor(superState: Parcelable) : super(superState)
 
     private constructor(`in`: Parcel) : super(`in`) {
         this.size = `in`.readInt()

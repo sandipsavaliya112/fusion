@@ -57,9 +57,7 @@ class AwesomeFab : ImageButton {
     private var mIcon: Drawable? = null
     private val mIconSize = AwesomeFabUtil.dpToPx(context, 24f)
     internal var showAnimation: Animation? = null
-        set
     internal var hideAnimation: Animation? = null
-        set
     private var mLabelText: String? = null
     private var mClickListener: View.OnClickListener? = null
     private var mBackgroundDrawable: Drawable? = null
@@ -119,19 +117,19 @@ class AwesomeFab : ImageButton {
         }
 
     internal val labelView: AwesomeFabLabel?
-        get() = getTag(R.id.fab_label) as AwesomeFabLabel
+        get() = getTag(R.id.fab_label) as AwesomeFabLabel?
 
     internal var mGestureDetector = GestureDetector(context, object : GestureDetector.SimpleOnGestureListener() {
 
         override fun onDown(e: MotionEvent): Boolean {
-            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel
+            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel?
             awesomeFabLabel?.onActionDown()
             onActionDown()
             return super.onDown(e)
         }
 
         override fun onSingleTapUp(e: MotionEvent): Boolean {
-            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel
+            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel?
             awesomeFabLabel?.onActionUp()
             onActionUp()
             return super.onSingleTapUp(e)
@@ -677,17 +675,17 @@ class AwesomeFab : ImageButton {
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
         if (mClickListener != null && isEnabled) {
-            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel ?: return super.onTouchEvent(event)
+            val awesomeFabLabel = getTag(R.id.fab_label) as AwesomeFabLabel? ?: return super.onTouchEvent(event)
 
             val action = event.action
             when (action) {
                 MotionEvent.ACTION_UP -> {
-                    awesomeFabLabel?.onActionUp()
+                    awesomeFabLabel.onActionUp()
                     onActionUp()
                 }
 
                 MotionEvent.ACTION_CANCEL -> {
-                    awesomeFabLabel?.onActionUp()
+                    awesomeFabLabel.onActionUp()
                     onActionUp()
                 }
             }
@@ -744,7 +742,7 @@ class AwesomeFab : ImageButton {
         private var circleInsetHorizontal: Int = 0
         private var circleInsetVertical: Int = 0
 
-        private constructor() {}
+        private constructor()
 
         internal constructor(s: Shape) : super(s) {
             circleInsetHorizontal = if (hasShadow()) mShadowRadius + Math.abs(mShadowXOffset) else 0
@@ -825,7 +823,7 @@ class AwesomeFab : ImageButton {
         var mAnimateProgress: Boolean = false
         var mShowProgressBackground: Boolean = false
 
-        constructor(superState: Parcelable) : super(superState) {}
+        constructor(superState: Parcelable) : super(superState)
 
         private constructor(`in`: Parcel) : super(`in`) {
             this.mCurrentProgress = `in`.readFloat()
@@ -896,7 +894,7 @@ class AwesomeFab : ImageButton {
     override fun setOnClickListener(l: View.OnClickListener?) {
         super.setOnClickListener(l)
         mClickListener = l
-        val label = getTag(R.id.fab_label) as View
+        val label = getTag(R.id.fab_label) as View?
         label?.setOnClickListener {
             if (mClickListener != null) {
                 mClickListener!!.onClick(this@AwesomeFab)

@@ -17,9 +17,9 @@ class AwesomeCustomDialog : AwesomeBase<AwesomeCustomDialog> {
     override val layout: Int
         get() = R.layout.dialog_custom
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     fun setView(@LayoutRes layout: Int): AwesomeCustomDialog {
         val inflater = LayoutInflater.from(context)
@@ -61,12 +61,12 @@ class AwesomeCustomDialog : AwesomeBase<AwesomeCustomDialog> {
         return this
     }
 
-    internal override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         instanceStateManager!!.saveInstanceState(outState)
     }
 
-    internal override fun restoreState(savedState: Bundle) {
+    override fun restoreState(savedState: Bundle) {
         super.restoreState(savedState)
         instanceStateManager!!.restoreInstanceState(savedState)
     }

@@ -83,118 +83,13 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
-    public int getMonthTextColor() {
-        return monthTextColor;
-    }
-
-    @Override
-    public int getOtherDayTextColor() {
-        return otherDayTextColor;
-    }
-
-    @Override
-    public int getDayTextColor() {
-        return dayTextColor;
-    }
-
-    @Override
-    public int getWeekendDayTextColor() {
-        return weekendDayTextColor;
-    }
-
-    @Override
-    public int getWeekDayTitleTextColor() {
-        return weekDayTitleTextColor;
-    }
-
-    @Override
-    public int getSelectedDayTextColor() {
-        return selectedDayTextColor;
-    }
-
-    @Override
-    public int getSelectedDayBackgroundColor() {
-        return selectedDayBackgroundColor;
-    }
-
-    @Override
-    public int getSelectedDayBackgroundStartColor() {
-        return selectedDayBackgroundStartColor;
-    }
-
-    @Override
-    public int getSelectedDayBackgroundEndColor() {
-        return selectedDayBackgroundEndColor;
-    }
-
-    @Override
-    public int getCurrentDayTextColor() {
-        return currentDayTextColor;
-    }
-
-    @Override
-    public int getCurrentDayIconRes() {
-        return currentDayIconRes;
-    }
-
-    @Override
-    public int getCurrentDaySelectedIconRes() {
-        return currentDaySelectedIconRes;
-    }
-
-    @Override
-    public int getCalendarOrientation() {
-        return calendarOrientation;
-    }
-
-    @Override
-    public int getConnectedDayIconRes() {
-        return connectedDayIconRes;
-    }
-
-    @Override
-    public int getConnectedDaySelectedIconRes() {
-        return connectedDaySelectedIconRes;
-    }
-
-    @Override
-    public int getConnectedDayIconPosition() {
-        return connectedDayIconPosition;
-    }
-
-    @Override
-    public int getDisabledDayTextColor() {
-        return disabledDayTextColor;
-    }
-
-    @Override
-    public int getSelectionBarMonthTextColor() {
-        return selectionBarMonthTextColor;
-    }
-
-    @Override
-    public int getPreviousMonthIconRes() {
-        return previousMonthIconRes;
-    }
-
-    @Override
-    public int getNextMonthIconRes() {
-        return nextMonthIconRes;
-    }
-
-    @Override
-    public boolean isShowDaysOfWeek() {
-        return showDaysOfWeek;
-    }
-
-    @Override
-    public boolean isShowDaysOfWeekTitle() {
-        return showDaysOfWeekTitle;
-    }
-
-    @Override
     public void setCalendarBackgroundColor(int calendarBackgroundColor) {
         this.calendarBackgroundColor = calendarBackgroundColor;
+    }
+
+    @Override
+    public int getMonthTextColor() {
+        return monthTextColor;
     }
 
     @Override
@@ -203,8 +98,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getOtherDayTextColor() {
+        return otherDayTextColor;
+    }
+
+    @Override
     public void setOtherDayTextColor(int otherDayTextColor) {
         this.otherDayTextColor = otherDayTextColor;
+    }
+
+    @Override
+    public int getDayTextColor() {
+        return dayTextColor;
     }
 
     @Override
@@ -213,8 +118,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getWeekendDayTextColor() {
+        return weekendDayTextColor;
+    }
+
+    @Override
     public void setWeekendDayTextColor(int weekendDayTextColor) {
         this.weekendDayTextColor = weekendDayTextColor;
+    }
+
+    @Override
+    public int getWeekDayTitleTextColor() {
+        return weekDayTitleTextColor;
     }
 
     @Override
@@ -223,8 +138,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getSelectedDayTextColor() {
+        return selectedDayTextColor;
+    }
+
+    @Override
     public void setSelectedDayTextColor(int selectedDayTextColor) {
         this.selectedDayTextColor = selectedDayTextColor;
+    }
+
+    @Override
+    public int getSelectedDayBackgroundColor() {
+        return selectedDayBackgroundColor;
     }
 
     @Override
@@ -233,8 +158,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getSelectedDayBackgroundStartColor() {
+        return selectedDayBackgroundStartColor;
+    }
+
+    @Override
     public void setSelectedDayBackgroundStartColor(int selectedDayBackgroundStartColor) {
         this.selectedDayBackgroundStartColor = selectedDayBackgroundStartColor;
+    }
+
+    @Override
+    public int getSelectedDayBackgroundEndColor() {
+        return selectedDayBackgroundEndColor;
     }
 
     @Override
@@ -243,8 +178,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getCurrentDayTextColor() {
+        return currentDayTextColor;
+    }
+
+    @Override
     public void setCurrentDayTextColor(int currentDayTextColor) {
         this.currentDayTextColor = currentDayTextColor;
+    }
+
+    @Override
+    public int getCurrentDayIconRes() {
+        return currentDayIconRes;
     }
 
     @Override
@@ -253,8 +198,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getCurrentDaySelectedIconRes() {
+        return currentDaySelectedIconRes;
+    }
+
+    @Override
     public void setCurrentDaySelectedIconRes(int currentDaySelectedIconRes) {
         this.currentDaySelectedIconRes = currentDaySelectedIconRes;
+    }
+
+    @Override
+    public int getCalendarOrientation() {
+        return calendarOrientation;
     }
 
     @Override
@@ -263,8 +218,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getConnectedDayIconRes() {
+        return connectedDayIconRes;
+    }
+
+    @Override
     public void setConnectedDayIconRes(int connectedDayIconRes) {
         this.connectedDayIconRes = connectedDayIconRes;
+    }
+
+    @Override
+    public int getConnectedDaySelectedIconRes() {
+        return connectedDaySelectedIconRes;
     }
 
     @Override
@@ -273,8 +238,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getConnectedDayIconPosition() {
+        return connectedDayIconPosition;
+    }
+
+    @Override
     public void setConnectedDayIconPosition(int connectedDayIconPosition) {
         this.connectedDayIconPosition = connectedDayIconPosition;
+    }
+
+    @Override
+    public int getDisabledDayTextColor() {
+        return disabledDayTextColor;
     }
 
     @Override
@@ -283,8 +258,18 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getSelectionBarMonthTextColor() {
+        return selectionBarMonthTextColor;
+    }
+
+    @Override
     public void setSelectionBarMonthTextColor(int selectionBarMonthTextColor) {
         this.selectionBarMonthTextColor = selectionBarMonthTextColor;
+    }
+
+    @Override
+    public int getPreviousMonthIconRes() {
+        return previousMonthIconRes;
     }
 
     @Override
@@ -293,13 +278,28 @@ public class AppearanceModel implements AppearanceInterface {
     }
 
     @Override
+    public int getNextMonthIconRes() {
+        return nextMonthIconRes;
+    }
+
+    @Override
     public void setNextMonthIconRes(int nextMonthIconRes) {
         this.nextMonthIconRes = nextMonthIconRes;
     }
 
     @Override
+    public boolean isShowDaysOfWeek() {
+        return showDaysOfWeek;
+    }
+
+    @Override
     public void setShowDaysOfWeek(boolean showDaysOfWeek) {
         this.showDaysOfWeek = showDaysOfWeek;
+    }
+
+    @Override
+    public boolean isShowDaysOfWeekTitle() {
+        return showDaysOfWeekTitle;
     }
 
     @Override

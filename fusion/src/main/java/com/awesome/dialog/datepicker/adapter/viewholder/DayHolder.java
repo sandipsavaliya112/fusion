@@ -20,7 +20,7 @@ public class DayHolder extends BaseDayHolder {
 
     public DayHolder(View itemView, CalendarView calendarView) {
         super(itemView, calendarView);
-        ctvDay = (CircleAnimationTextView) itemView.findViewById(R.id.tv_day_number);
+        ctvDay = itemView.findViewById(R.id.tv_day_number);
     }
 
     public void bind(Day day, BaseSelectionManager selectionManager) {

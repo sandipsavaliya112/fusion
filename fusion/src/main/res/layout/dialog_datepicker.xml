@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <include layout="@layout/view_color_area"/>
@@ -22,8 +22,8 @@
             <com.awesome.dialog.datepicker.view.CalendarView
                 android:id="@+id/calendar_view"
                 android:layout_width="match_parent"
-                app:orientationCal="horizontal"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:orientationCal="horizontal" />
 
             <View
                 android:layout_width="match_parent"
@@ -55,6 +55,14 @@
                     android:visibility="gone" />
 
             </LinearLayout>
+
+            <Button
+                android:id="@+id/ld_btn_confirm"
+                style="?android:borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@android:string/ok" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

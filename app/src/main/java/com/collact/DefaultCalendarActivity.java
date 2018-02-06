@@ -51,7 +51,7 @@ public class DefaultCalendarActivity extends AppCompatActivity implements RadioG
     }
 
     private void initViews() {
-        calendarView = (CalendarView) findViewById(R.id.calendar_view);
+        calendarView = findViewById(R.id.calendar_view);
         ((RadioGroup) findViewById(R.id.rg_orientation)).setOnCheckedChangeListener(this);
         ((RadioGroup) findViewById(R.id.rg_selection_type)).setOnCheckedChangeListener(this);
     }

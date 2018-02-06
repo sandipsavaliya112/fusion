@@ -352,7 +352,7 @@ class AwesomeFabMenu @JvmOverloads constructor(context: Context, attrs: Attribut
             usedWidth += child.measuredWidth
             height += child.measuredHeight
 
-            val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel
+            val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel?
             if (awesomeFabLabel != null) {
                 val labelOffset = (mMaxButtonWidth - child.measuredWidth) / if (mUsingMenuLabel) 1 else 2
                 val labelUsedWidth = child.measuredWidth + awesomeFabLabel.calculateShadowWidth() + mLabelsMargin + labelOffset
@@ -426,7 +426,7 @@ class AwesomeFabMenu @JvmOverloads constructor(context: Context, attrs: Attribut
                 }
             }
 
-            val label = fab.getTag(R.id.fab_label) as View
+            val label = fab.getTag(R.id.fab_label) as View?
             if (label != null) {
                 val labelsOffset = (if (mUsingMenuLabel) mMaxButtonWidth / 2 else fab.measuredWidth / 2) + mLabelsMargin
                 val labelXNearButton = if (mLabelsPosition == LABELS_POSITION_LEFT)
@@ -653,7 +653,7 @@ class AwesomeFabMenu @JvmOverloads constructor(context: Context, attrs: Attribut
                             child.show(animate)
                         }
 
-                        val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel
+                        val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel?
                         if (awesomeFabLabel != null && awesomeFabLabel.isHandleVisibilityChanges) {
                             awesomeFabLabel.show(animate)
                         }
@@ -702,7 +702,7 @@ class AwesomeFabMenu @JvmOverloads constructor(context: Context, attrs: Attribut
                             child.hide(animate)
                         }
 
-                        val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel
+                        val awesomeFabLabel = child.getTag(R.id.fab_label) as AwesomeFabLabel?
                         if (awesomeFabLabel != null && awesomeFabLabel.isHandleVisibilityChanges) {
                             awesomeFabLabel.hide(animate)
                         }

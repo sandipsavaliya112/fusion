@@ -29,6 +29,11 @@ public class CalendarListsModel implements CalendarListsInterface {
     }
 
     @Override
+    public void setDisabledDays(Set<Long> disabledDays) {
+        this.disabledDays = disabledDays;
+    }
+
+    @Override
     public ConnectedDaysManager getConnectedDaysManager() {
         return connectedDaysManager;
     }
@@ -39,18 +44,13 @@ public class CalendarListsModel implements CalendarListsInterface {
     }
 
     @Override
-    public DisabledDaysCriteria getDisabledDaysCriteria() {
-        return disabledDaysCriteria;
-    }
-
-    @Override
-    public void setDisabledDays(Set<Long> disabledDays) {
-        this.disabledDays = disabledDays;
-    }
-
-    @Override
     public void setWeekendDays(Set<Long> weekendDays) {
         this.weekendDays = weekendDays;
+    }
+
+    @Override
+    public DisabledDaysCriteria getDisabledDaysCriteria() {
+        return disabledDaysCriteria;
     }
 
     @Override

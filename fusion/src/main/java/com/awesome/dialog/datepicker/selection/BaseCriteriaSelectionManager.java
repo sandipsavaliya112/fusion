@@ -63,11 +63,7 @@ public abstract class BaseCriteriaSelectionManager extends BaseSelectionManager 
     }
 
     public boolean hasCriteria() {
-        if (criteriaList == null || criteriaList.isEmpty()) {
-            return false;
-        } else {
-            return true;
-        }
+        return !(criteriaList == null || criteriaList.isEmpty());
     }
 
     public boolean isDaySelectedByCriteria(Day day) {

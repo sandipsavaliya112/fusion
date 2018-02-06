@@ -5,11 +5,10 @@ import java.util.TreeSet;
 
 public class DisabledDaysCriteria {
 
-    private DisabledDaysCriteriaType criteriaType = DisabledDaysCriteriaType.DAYS_OF_MONTH;
-    private Set<Integer> days;
-
     private static final int MAX_DAYS_COUNT_IN_MONTH = 31;
     private static final int MAX_DAYS_COUNT_IN_WEEK = 7;
+    private DisabledDaysCriteriaType criteriaType = DisabledDaysCriteriaType.DAYS_OF_MONTH;
+    private Set<Integer> days;
 
     public DisabledDaysCriteria(int startRange, int endRange, DisabledDaysCriteriaType criteriaType) {
         setDays(startRange, endRange, criteriaType);

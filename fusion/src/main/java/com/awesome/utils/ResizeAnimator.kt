@@ -32,17 +32,13 @@ class ResizeAnimator(internal var view: View, internal val targetWidth: Int, int
         if (targetHeight != 0) {
             if (isDiagonal) {
                 if (view.id == R.id.vSwitcherDiagonal) {
-                    angle -= 0.35f
+                    angle -= 0.25f
                     (view as AwesomeDiagonal).setAngle(angle)
                 }
             }
             view.layoutParams.height = newHeight
         }
         view.requestLayout()
-    }
-
-    override fun initialize(width: Int, height: Int, parentWidth: Int, parentHeight: Int) {
-        super.initialize(width, height, parentWidth, parentHeight)
     }
 
     override fun willChangeBounds(): Boolean {

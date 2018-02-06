@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Collact</string>
     <string name="action_settings">Settings</string>
+    <string name="you_ordered">You\'ve ordered:\n%s</string>
+
+    <string-array name="food">
+        <item>Pitza</item>
+        <item>Burger</item>
+        <item>Sandwich</item>
+        <item>Hamburger</item>
+    </string-array>
 </resources>

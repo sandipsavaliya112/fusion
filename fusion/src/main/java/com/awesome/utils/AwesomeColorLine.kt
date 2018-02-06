@@ -36,10 +36,6 @@ class AwesomeColorLine(context: Context, attrs: AttributeSet) : View(context, at
      * Return currently selected color.
      */
     var color: Int = 0
-        get() = field
-        set(value) {
-            field = value
-        }
 
     private var onColorChanged: OnColorChangedListener? = null
 
@@ -270,7 +266,7 @@ class AwesomeColorLine(context: Context, attrs: AttributeSet) : View(context, at
         var selectedColor: Int = 0
         var isColorSelected: Boolean = false
 
-        constructor(superState: Parcelable) : super(superState) {}
+        constructor(superState: Parcelable) : super(superState)
 
         private constructor(`in`: Parcel) : super(`in`) {
             this.selectedColor = `in`.readInt()
@@ -296,10 +292,6 @@ class AwesomeColorLine(context: Context, attrs: AttributeSet) : View(context, at
                 }
             }
         }
-    }
-
-    override fun performClick(): Boolean {
-        return super.performClick()
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {

@@ -94,7 +94,7 @@ class AwesomeDiagonal : FrameLayout {
             //this needs to be fixed for 25.4.0
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && ViewCompat.getElevation(this) > 0f) {
                 try {
-                    setOutlineProvider(outlineProvider)
+                    outlineProvider = outlineProvider
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }

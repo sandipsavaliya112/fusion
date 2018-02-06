@@ -16,12 +16,11 @@ import java.util.List;
 
 public class MultipleSelectionBarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final static int VIEW_TYPE_TITLE = 0;
+    private final static int VIEW_TYPE_CONTENT = 1;
     private List<SelectionBarItem> items;
     private CalendarView calendarView;
     private ListItemClickListener listItemClickListener;
-
-    private final static int VIEW_TYPE_TITLE = 0;
-    private final static int VIEW_TYPE_CONTENT = 1;
 
     public MultipleSelectionBarAdapter(CalendarView calendarView, ListItemClickListener listItemClickListener) {
         items = new ArrayList<>();
@@ -71,13 +70,17 @@ public class MultipleSelectionBarAdapter extends RecyclerView.Adapter<RecyclerVi
     }
 
 
+    public interface ListItemClickListener {
+        void onMultipleSelectionListItemClick(Day day);
+    }
+
     public class TitleViewHolder extends RecyclerView.ViewHolder {
 
         final TextView tvTitle;
 
         public TitleViewHolder(View itemView) {
             super(itemView);
-            tvTitle = (TextView) itemView.findViewById(R.id.tv_title);
+            tvTitle = itemView.findViewById(R.id.tv_title);
         }
 
         public void bind(int position) {
@@ -92,7 +95,7 @@ public class MultipleSelectionBarAdapter extends RecyclerView.Adapter<RecyclerVi
 
         public ContentViewHolder(View itemView) {
             super(itemView);
-            catvDay = (CircleAnimationTextView) itemView.findViewById(R.id.catv_day);
+            catvDay = itemView.findViewById(R.id.catv_day);
         }
 
         public void bind(int position) {
@@ -109,9 +112,5 @@ public class MultipleSelectionBarAdapter extends RecyclerView.Adapter<RecyclerVi
                 }
             });
         }
-    }
-
-    public interface ListItemClickListener {
-        void onMultipleSelectionListItemClick(Day day);
     }
 }

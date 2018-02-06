@@ -9,12 +9,12 @@ import com.awesome.R
  */
 class AwesomeProgressDialog : AwesomeBase<AwesomeProgressDialog> {
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_progress
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         setCancelable(false)

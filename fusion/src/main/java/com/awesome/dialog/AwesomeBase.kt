@@ -34,7 +34,7 @@ import com.awesome.utils.ResizeAnimator
  */
 abstract class AwesomeBase<T : AwesomeBase<T>> {
 
-    public var dialog: Dialog? = null
+    var dialog: Dialog? = null
     private var dialogView: View? = null
 
     lateinit var vSwitcher: RelativeLayout

@@ -18,35 +18,29 @@ import com.awesome.dialog.datepicker.view.CalendarView;
 
 public class CircleAnimationTextView extends AppCompatTextView {
 
+    public static final int DEFAULT_PADDING = 10;
+    public static final int MAX_PROGRESS = 100;
+    public static final long SELECTION_ANIMATION_DURATION = 300;
     private SelectionState selectionState;
     private CalendarView calendarView;
-
     private int animationProgress;
     private boolean clearView;
     private boolean stateChanged;
-
     //Circle
     private Paint circlePaint;
     private Paint circleUnderPaint;
     private Day day;
     private int circleColor;
-
     //Variable to fix bugs when cannot start animation during scroll/fast scroll
     //seems like animation can't be done on views that are not visible on screen
     private boolean animationStarted;
     private long animationStartTime;
-
     //Start/End range half rectangle
     private Paint rectanglePaint;
     private Rect rectangle;
-
     //Rectangle
     private Paint backgroundRectanglePaint;
     private Rect backgroundRectangle;
-
-    public static final int DEFAULT_PADDING = 10;
-    public static final int MAX_PROGRESS = 100;
-    public static final long SELECTION_ANIMATION_DURATION = 300;
 
     public CircleAnimationTextView(Context context) {
         super(context);

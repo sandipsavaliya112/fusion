@@ -63,10 +63,10 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     private void initViews() {
-        flNavigationButtonsBar = (FrameLayout) findViewById(R.id.fl_navigation_buttons_bar);
-        ivCancel = (ImageView) findViewById(R.id.iv_cancel);
-        ivDone = (ImageView) findViewById(R.id.iv_done);
-        calendarView = (CalendarView) findViewById(R.id.calendar_view);
+        flNavigationButtonsBar = findViewById(R.id.fl_navigation_buttons_bar);
+        ivCancel = findViewById(R.id.iv_cancel);
+        ivDone = findViewById(R.id.iv_done);
+        calendarView = findViewById(R.id.calendar_view);
 
         Drawable background = calendarView.getBackground();
 
@@ -119,118 +119,13 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
-    public int getMonthTextColor() {
-        return calendarView.getMonthTextColor();
-    }
-
-    @Override
-    public int getOtherDayTextColor() {
-        return calendarView.getOtherDayTextColor();
-    }
-
-    @Override
-    public int getDayTextColor() {
-        return calendarView.getDayTextColor();
-    }
-
-    @Override
-    public int getWeekendDayTextColor() {
-        return calendarView.getWeekendDayTextColor();
-    }
-
-    @Override
-    public int getWeekDayTitleTextColor() {
-        return calendarView.getWeekDayTitleTextColor();
-    }
-
-    @Override
-    public int getSelectedDayTextColor() {
-        return calendarView.getSelectedDayTextColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundColor() {
-        return calendarView.getSelectedDayBackgroundColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundStartColor() {
-        return calendarView.getSelectedDayBackgroundStartColor();
-    }
-
-    @Override
-    public int getSelectedDayBackgroundEndColor() {
-        return calendarView.getSelectedDayBackgroundEndColor();
-    }
-
-    @Override
-    public int getCurrentDayTextColor() {
-        return calendarView.getCurrentDayTextColor();
-    }
-
-    @Override
-    public int getCurrentDayIconRes() {
-        return calendarView.getCurrentDayIconRes();
-    }
-
-    @Override
-    public int getCurrentDaySelectedIconRes() {
-        return calendarView.getCurrentDaySelectedIconRes();
-    }
-
-    @Override
-    public int getCalendarOrientation() {
-        return calendarView.getCalendarOrientation();
-    }
-
-    @Override
-    public int getConnectedDayIconRes() {
-        return calendarView.getConnectedDayIconRes();
-    }
-
-    @Override
-    public int getConnectedDaySelectedIconRes() {
-        return calendarView.getConnectedDaySelectedIconRes();
-    }
-
-    @Override
-    public int getConnectedDayIconPosition() {
-        return calendarView.getConnectedDayIconPosition();
-    }
-
-    @Override
-    public int getDisabledDayTextColor() {
-        return calendarView.getDisabledDayTextColor();
-    }
-
-    @Override
-    public int getSelectionBarMonthTextColor() {
-        return calendarView.getSelectionBarMonthTextColor();
-    }
-
-    @Override
-    public int getPreviousMonthIconRes() {
-        return calendarView.getPreviousMonthIconRes();
-    }
-
-    @Override
-    public int getNextMonthIconRes() {
-        return calendarView.getNextMonthIconRes();
-    }
-
-    @Override
-    public boolean isShowDaysOfWeek() {
-        return calendarView.isShowDaysOfWeek();
-    }
-
-    @Override
-    public boolean isShowDaysOfWeekTitle() {
-        return calendarView.isShowDaysOfWeekTitle();
-    }
-
-    @Override
     public void setCalendarBackgroundColor(int calendarBackgroundColor) {
         calendarView.setCalendarBackgroundColor(calendarBackgroundColor);
+    }
+
+    @Override
+    public int getMonthTextColor() {
+        return calendarView.getMonthTextColor();
     }
 
     @Override
@@ -239,8 +134,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getOtherDayTextColor() {
+        return calendarView.getOtherDayTextColor();
+    }
+
+    @Override
     public void setOtherDayTextColor(int otherDayTextColor) {
         calendarView.setOtherDayTextColor(otherDayTextColor);
+    }
+
+    @Override
+    public int getDayTextColor() {
+        return calendarView.getDayTextColor();
     }
 
     @Override
@@ -249,8 +154,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getWeekendDayTextColor() {
+        return calendarView.getWeekendDayTextColor();
+    }
+
+    @Override
     public void setWeekendDayTextColor(int weekendDayTextColor) {
         calendarView.setWeekendDayTextColor(weekendDayTextColor);
+    }
+
+    @Override
+    public int getWeekDayTitleTextColor() {
+        return calendarView.getWeekDayTitleTextColor();
     }
 
     @Override
@@ -259,8 +174,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getSelectedDayTextColor() {
+        return calendarView.getSelectedDayTextColor();
+    }
+
+    @Override
     public void setSelectedDayTextColor(int selectedDayTextColor) {
         calendarView.setSelectedDayTextColor(selectedDayTextColor);
+    }
+
+    @Override
+    public int getSelectedDayBackgroundColor() {
+        return calendarView.getSelectedDayBackgroundColor();
     }
 
     @Override
@@ -269,8 +194,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getSelectedDayBackgroundStartColor() {
+        return calendarView.getSelectedDayBackgroundStartColor();
+    }
+
+    @Override
     public void setSelectedDayBackgroundStartColor(int selectedDayBackgroundStartColor) {
         calendarView.setSelectedDayBackgroundStartColor(selectedDayBackgroundStartColor);
+    }
+
+    @Override
+    public int getSelectedDayBackgroundEndColor() {
+        return calendarView.getSelectedDayBackgroundEndColor();
     }
 
     @Override
@@ -279,8 +214,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getCurrentDayTextColor() {
+        return calendarView.getCurrentDayTextColor();
+    }
+
+    @Override
     public void setCurrentDayTextColor(int currentDayTextColor) {
         calendarView.setCurrentDayTextColor(currentDayTextColor);
+    }
+
+    @Override
+    public int getCurrentDayIconRes() {
+        return calendarView.getCurrentDayIconRes();
     }
 
     @Override
@@ -289,8 +234,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getCurrentDaySelectedIconRes() {
+        return calendarView.getCurrentDaySelectedIconRes();
+    }
+
+    @Override
     public void setCurrentDaySelectedIconRes(int currentDaySelectedIconRes) {
         calendarView.setCurrentDaySelectedIconRes(currentDaySelectedIconRes);
+    }
+
+    @Override
+    public int getCalendarOrientation() {
+        return calendarView.getCalendarOrientation();
     }
 
     @Override
@@ -299,8 +254,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getConnectedDayIconRes() {
+        return calendarView.getConnectedDayIconRes();
+    }
+
+    @Override
     public void setConnectedDayIconRes(int connectedDayIconRes) {
         calendarView.setConnectedDayIconRes(connectedDayIconRes);
+    }
+
+    @Override
+    public int getConnectedDaySelectedIconRes() {
+        return calendarView.getConnectedDaySelectedIconRes();
     }
 
     @Override
@@ -309,8 +274,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getConnectedDayIconPosition() {
+        return calendarView.getConnectedDayIconPosition();
+    }
+
+    @Override
     public void setConnectedDayIconPosition(int connectedDayIconPosition) {
         calendarView.setConnectedDayIconPosition(connectedDayIconPosition);
+    }
+
+    @Override
+    public int getDisabledDayTextColor() {
+        return calendarView.getDisabledDayTextColor();
     }
 
     @Override
@@ -319,8 +294,18 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getSelectionBarMonthTextColor() {
+        return calendarView.getSelectionBarMonthTextColor();
+    }
+
+    @Override
     public void setSelectionBarMonthTextColor(int selectionBarMonthTextColor) {
         calendarView.setSelectionBarMonthTextColor(selectionBarMonthTextColor);
+    }
+
+    @Override
+    public int getPreviousMonthIconRes() {
+        return calendarView.getPreviousMonthIconRes();
     }
 
     @Override
@@ -329,13 +314,28 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public int getNextMonthIconRes() {
+        return calendarView.getNextMonthIconRes();
+    }
+
+    @Override
     public void setNextMonthIconRes(int nextMonthIconRes) {
         calendarView.setNextMonthIconRes(nextMonthIconRes);
     }
 
     @Override
+    public boolean isShowDaysOfWeek() {
+        return calendarView.isShowDaysOfWeek();
+    }
+
+    @Override
     public void setShowDaysOfWeek(boolean showDaysOfWeek) {
         calendarView.setShowDaysOfWeek(showDaysOfWeek);
+    }
+
+    @Override
+    public boolean isShowDaysOfWeekTitle() {
+        return calendarView.isShowDaysOfWeekTitle();
     }
 
     @Override
@@ -349,6 +349,11 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
+    public void setDisabledDays(Set<Long> disabledDays) {
+        calendarView.setDisabledDays(disabledDays);
+    }
+
+    @Override
     public ConnectedDaysManager getConnectedDaysManager() {
         return calendarView.getConnectedDaysManager();
     }
@@ -359,18 +364,13 @@ public class CalendarDialog extends Dialog implements View.OnClickListener,
     }
 
     @Override
-    public DisabledDaysCriteria getDisabledDaysCriteria() {
-        return calendarView.getDisabledDaysCriteria();
-    }
-
-    @Override
-    public void setDisabledDays(Set<Long> disabledDays) {
-        calendarView.setDisabledDays(disabledDays);
-    }
-
-    @Override
     public void setWeekendDays(Set<Long> weekendDays) {
         calendarView.setWeekendDays(weekendDays);
+    }
+
+    @Override
+    public DisabledDaysCriteria getDisabledDaysCriteria() {
+        return calendarView.getDisabledDaysCriteria();
     }
 
     @Override

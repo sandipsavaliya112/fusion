@@ -24,12 +24,12 @@ class AwesomeTextPromptDialog : AwesomeBase<AwesomeTextPromptDialog> {
 
     private var filter: TextFilter? = null
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_text_input
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     init {
         confirmButton = findView(R.id.ld_btn_confirm)
@@ -121,13 +121,13 @@ class AwesomeTextPromptDialog : AwesomeBase<AwesomeTextPromptDialog> {
         errorMessage!!.visibility = View.GONE
     }
 
-    internal override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putBoolean(KEY_HAS_ERROR, errorMessage!!.visibility == View.VISIBLE)
         outState.putString(KEY_TYPED_TEXT, inputField!!.text.toString())
     }
 
-    internal override fun restoreState(savedState: Bundle) {
+    override fun restoreState(savedState: Bundle) {
         super.restoreState(savedState)
         if (savedState.getBoolean(KEY_HAS_ERROR, false)) {
             setError()

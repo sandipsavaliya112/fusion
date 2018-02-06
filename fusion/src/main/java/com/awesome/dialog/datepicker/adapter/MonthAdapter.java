@@ -43,12 +43,12 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthHolder> {
         this.selectionManager = selectionManager;
     }
 
-    public void setSelectionManager(BaseSelectionManager selectionManager) {
-        this.selectionManager = selectionManager;
-    }
-
     public BaseSelectionManager getSelectionManager() {
         return selectionManager;
+    }
+
+    public void setSelectionManager(BaseSelectionManager selectionManager) {
+        this.selectionManager = selectionManager;
     }
 
     @Override
@@ -85,41 +85,6 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthHolder> {
 
     public List<Month> getData() {
         return months;
-    }
-
-    public static class MonthAdapterBuilder {
-
-        private List<Month> months;
-        private MonthDelegate monthDelegate;
-        private CalendarView calendarView;
-        private BaseSelectionManager selectionManager;
-
-        public MonthAdapterBuilder setMonths(List<Month> months) {
-            this.months = months;
-            return this;
-        }
-
-        public MonthAdapterBuilder setMonthDelegate(MonthDelegate monthHolderDelegate) {
-            this.monthDelegate = monthHolderDelegate;
-            return this;
-        }
-
-        public MonthAdapterBuilder setCalendarView(CalendarView calendarView) {
-            this.calendarView = calendarView;
-            return this;
-        }
-
-        public MonthAdapterBuilder setSelectionManager(BaseSelectionManager selectionManager) {
-            this.selectionManager = selectionManager;
-            return this;
-        }
-
-        public MonthAdapter createMonthAdapter() {
-            return new MonthAdapter(months,
-                    monthDelegate,
-                    calendarView,
-                    selectionManager);
-        }
     }
 
     public void setWeekendDays(Set<Long> weekendDays) {
@@ -165,6 +130,41 @@ public class MonthAdapter extends RecyclerView.Adapter<MonthHolder> {
                 }
             }
             notifyDataSetChanged();
+        }
+    }
+
+    public static class MonthAdapterBuilder {
+
+        private List<Month> months;
+        private MonthDelegate monthDelegate;
+        private CalendarView calendarView;
+        private BaseSelectionManager selectionManager;
+
+        public MonthAdapterBuilder setMonths(List<Month> months) {
+            this.months = months;
+            return this;
+        }
+
+        public MonthAdapterBuilder setMonthDelegate(MonthDelegate monthHolderDelegate) {
+            this.monthDelegate = monthHolderDelegate;
+            return this;
+        }
+
+        public MonthAdapterBuilder setCalendarView(CalendarView calendarView) {
+            this.calendarView = calendarView;
+            return this;
+        }
+
+        public MonthAdapterBuilder setSelectionManager(BaseSelectionManager selectionManager) {
+            this.selectionManager = selectionManager;
+            return this;
+        }
+
+        public MonthAdapter createMonthAdapter() {
+            return new MonthAdapter(months,
+                    monthDelegate,
+                    calendarView,
+                    selectionManager);
         }
     }
 }

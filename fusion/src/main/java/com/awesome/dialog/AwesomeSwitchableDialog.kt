@@ -16,12 +16,12 @@ class AwesomeSwitchableDialog : AwesomeBase<AwesomeSwitchableDialog> {
     private var addedViewBottom: View? = null
     private val instanceStateManager: InstanceStateManager? = null
 
-    protected override val layout: Int
+    override val layout: Int
         get() = R.layout.dialog_top_bottom
 
-    constructor(context: Context) : super(context) {}
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context, theme: Int) : super(context, theme) {}
+    constructor(context: Context, theme: Int) : super(context, theme)
 
     fun setTopView(@LayoutRes layout: Int): AwesomeSwitchableDialog {
         val inflater = LayoutInflater.from(context)
@@ -70,12 +70,12 @@ class AwesomeSwitchableDialog : AwesomeBase<AwesomeSwitchableDialog> {
         return this
     }
 
-    internal override fun onSaveInstanceState(outState: Bundle) {
+    override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         instanceStateManager!!.saveInstanceState(outState)
     }
 
-    internal override fun restoreState(savedState: Bundle) {
+    override fun restoreState(savedState: Bundle) {
         super.restoreState(savedState)
         instanceStateManager!!.restoreInstanceState(savedState)
     }

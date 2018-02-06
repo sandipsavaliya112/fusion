@@ -17,7 +17,7 @@ public class DayOfWeekHolder extends BaseDayHolder {
 
     public DayOfWeekHolder(View itemView, CalendarView calendarView) {
         super(itemView, calendarView);
-        tvDay = (TextView) itemView.findViewById(R.id.tv_day_name);
+        tvDay = itemView.findViewById(R.id.tv_day_name);
         mDayOfWeekFormatter = new SimpleDateFormat(Constants.DAY_NAME_FORMAT, Locale.getDefault());
     }
 

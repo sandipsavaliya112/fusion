@@ -12,7 +12,7 @@ public class OtherDayHolder extends BaseDayHolder {
 
     public OtherDayHolder(View itemView, CalendarView calendarView) {
         super(itemView, calendarView);
-        tvDay = (TextView) itemView.findViewById(R.id.tv_day_number);
+        tvDay = itemView.findViewById(R.id.tv_day_number);
     }
 
     public void bind(Day day) {
